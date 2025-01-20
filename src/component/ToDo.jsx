@@ -2,10 +2,13 @@ import React from 'react'
 import  {useState } from 'react'
 
 function ToDo(props) {
-  return (
-    <div>
-      <h1>To do List</h1>
 
+  const [tasks, setTasks] = useState("");
+  const [newTasks, setnewTasks] = useState("");
+
+  return (
+    <div className=''>
+      <h1>To do List</h1>
       <form>
       <h2 className="">
           <label className="">
