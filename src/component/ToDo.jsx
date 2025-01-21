@@ -125,7 +125,7 @@ const initialState = [
 ];
 
 function ToDo() {
-  const [todos, setTodos] = useState([initialState]);
+  const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState("");
 
   function handleAddTodo() {
