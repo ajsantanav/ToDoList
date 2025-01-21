@@ -130,7 +130,7 @@ function ToDo() {
   const [id, setId] = useState()
   function handleAddTodo() {
     if (newTodo.trim() !== "") {
-      setTodos([{ userId: newId,id: id, text: newTodo, completed: false, editing: false }, ...todos]);
+      setTodos([{ id: id, text: newTodo, completed: false, editing: false }, ...todos]);
       setNewTodo("");
     }
   };
