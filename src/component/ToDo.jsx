@@ -1,10 +1,22 @@
 import React from 'react'
 import  {useState } from 'react'
 
-function ToDo(props) {
+function ToDo() {
 
   const [tasks, setTasks] = useState("");
   const [newTasks, setnewTasks] = useState("");
+
+  function addTask() {
+    setTasks(newTasks);
+  }
+
+  function deleteTask() {
+
+  }
+
+  function editTask() {
+    
+  }
 
   return (
     <div className=''>
@@ -24,6 +36,10 @@ function ToDo(props) {
         />
         <button type="submit" className="">Add</button>
       </form>
+
+      <ul className=''>
+          <li></li>
+      </ul>
     </div>
   )
 }
