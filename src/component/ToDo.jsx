@@ -198,8 +198,7 @@ function ToDo() {
             ) : (
               <>
                 <input
-                  type="text"
-                  defaultValue={todo.text}
+                  type="text" defaultValue={todo.text}
                   autoFocus
                 />
                 <button
