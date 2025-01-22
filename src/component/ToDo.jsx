@@ -128,14 +128,14 @@ function ToDo() {
   const [todos, setTodos] = useState(initialState);
   const [newTodo, setNewTodo] = useState("");
   const [id, setId] = useState()
-  function handleAddTodo() {
+  function handleAddTodo() {  //handles adding
     if (newTodo.trim() !== "") {
       setTodos([{ id: id, text: newTodo, completed: false, editing: false }, ...todos]);
       setNewTodo("");
     }
   };
 
-  function handleToggleComplete(id) { //handles adding
+  function handleToggleComplete(id) { //click check
     setTodos(
       todos.map((todo) =>
         todo.id === id ? { ...todo, completed: !todo.completed } : todo
